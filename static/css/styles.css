@@ -247,63 +247,86 @@ ul li {
 }
 
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        padding: 1rem;
-    }
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4rem 1rem;
+  }
 
-    .nav-right {
-        flex-direction: column;
-        gap: 1rem;
-    }
+  .nav-left h2 {
+    font-size: 1rem;
+    margin: 0;
+  }
 
-    .section-border {
-        padding: 40px 20px;
-    }
+  .nav-right {
+    gap: 0.5rem;
+  }
 
-    .project-card {
-        padding: 15px;
-    }
+  nav a {
+    font-size: 0.75rem;
+    margin: 0 0.5rem;
+    padding: 0.2rem 0;
+  }
 
-    .social-icons {
-        gap: 15px;
-    }
+  .navbar-logo {
+    height: 25px;
+    width: 25px;
+  }
 
-    .social-icons a {
-        font-size: 1.5rem;
-    }
+  #welcome-section {
+    padding-bottom: 10px;
+  }
+  .welcome-title {
+    font-size: 2rem;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
 
-    .corner-logo {
-        top: -10px;
-        right: 15px;
-        height: 150px;
-        width: 150px;
-    }
+  .quote {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
 
-    .welcome-title {
-        font-size: 3rem;
-    }
+  h2 {
+    font-size: 1.5rem;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
 
-    .quote {
-        font-size: 1.5rem;
-    }
+  p, ul li {
+    font-size: 0.95rem;
+    margin: 15px 20px;
+  }
+
+  section {
+    padding: 15px;
+    margin: 20px;
+  }
+
+  .corner-logo {
+    top: -5px;
+    right: 10px;
+    height: 100px;
+    width: 100px;
+  }
+
+  .typewriter-box {
+    font-size: 1rem;
+    top: 15px;
+    left: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  .social-icons {
+    font-size: 1rem;
+    margin: 15px;
+    gap: 8px;
+  }
+
+  .social-icons a {
+    font-size: 1rem;
+    gap: 8px;
+  }
 }
-
-@media (min-width: 769px) {
-    .welcome-title {
-        font-size: 4rem;
-    }
-
-    .quote {
-        font-size: 1.8rem;
-    }
-
-    .navbar {
-        padding: 1.5rem 2rem;
-    }
-
-    .project-card {
-        padding: 20px;
-    }
-}
-
