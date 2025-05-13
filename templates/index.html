@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yash's personal portfolio showcasing projects and skills.">
+    <meta name="keywords" content="portfolio, python, flask, projects, coding, web development">
+    <meta name="author" content="Yash">
+    <meta property="og:image" content="{{ url_for('static', filename='images/logo.png') }}">
+    <meta property="og:title" content="yaashhX Portfolio">
+    <meta property="og:description" content="Turning coffee into code... and debugging life.">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.png') }}" type="image/png">
+    <title>yaashhX | Portfolio</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <h2>Yash Kumar</h2>
+        </div>
+        <div class="nav-right">
+            <a href="#welcome-section">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <img 
+                src="{{ url_for('static', filename='images/logo.png') }}" 
+                srcset="{{ url_for('static', filename='images/logo.png') }} 300w, 
+                        {{ url_for('static', filename='images/logo.png') }} 600w" 
+                sizes="(max-width: 600px) 150px, 200px"
+                alt="yaashhX Logo" 
+                class="navbar-logo"
+            />
+        </div>
+    </nav>
+    <header id="welcome-section" class="section-border">
+        <img 
+            src="{{ url_for('static', filename='images/logo.png') }}" 
+            srcset="{{ url_for('static', filename='images/logo.png') }} 300w, 
+                    {{ url_for('static', filename='images/logo.png') }} 600w" 
+            sizes="(max-width: 600px) 150px, 200px"
+            alt="Logo"
+            class="corner-logo"
+        />
+        <h1 class="welcome-title">Welcome to my world of creation</h1>
+        <p class="quote">Just a coder trying to turn coffee into code...</p>
+        <p class="quote">and occasionally debugging life.</p>
+
+        <div class="typewriter-box">
+            <span class="static-code">Code</span>
+            <span id="dynamic-text"></span>
+        </div>
+    </header>
+
+    <script src="{{ url_for('static', filename='js/typewriter.js') }}"></script>
+
+    <section id="about" class="section-border">
+        <h2>About Me</h2>
+        <p>Sometimes I wonder if I’m learning things too slowly. Other times, I realize even the most complex systems
+            start with something small.</p>
+        <p>Lately, I’ve been paying attention to loops that never end, rules that don’t exist until you break them, and
+            the quiet satisfaction of watching something work exactly once… before it doesn’t...</p>
+        <p>This site? It’s not a finished product. It’s just a snapshot of the process—messy, curious, and maybe a
+            little too honest.</p>
+        <p>It's not polished. But it works for now. That’s kind of the point, isn’t it?</p>
+    </section>
+
+    <section id="skills" class="section-border">
+        <h2>Skills</h2>
+        <ul>
+            <li>Python</li>
+            <li>Flask</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Problem Solving</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="section-border">
+        <h2>Projects</h2>
+        <p>Almost there... Projects are just working through some bugs, aren’t we all?</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="social-icons">
+            <a href="https://github.com/yaashhX" target="_blank" class="github">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="mailto:yk5505564@gmail.com" class="mail">
+                <i class="fas fa-envelope"></i> Mail
+            </a>
+            <a href="https://wa.me/+919910293523" target="_blank" class="whatsapp">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+        </div>
+    </section>
+    
+</body>
+
+</html>
